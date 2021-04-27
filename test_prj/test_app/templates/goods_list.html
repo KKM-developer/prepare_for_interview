@@ -7,15 +7,15 @@
     <h1>{{ page_header }}</h1>
 
     <button id="ajaxButton">Load ajax</button>
-    <table>
-        <tr>
+    <table id="testTable">
+        <tr class="rowHeader">
             <th>Название</th>
             <th>Цена</th>
             <th>Поставщик</th>
             <th>Создано</th>
         </tr>
         {% for item in goods %}
-            <tr>
+            <tr class="row">
                 <td>{{ item.title }}</td>
                 <td>{{ item.price }}</td>
                 <td>{{ item.vendor }}</td>

@@ -6,6 +6,9 @@ from django.views.generic import TemplateView
 def index(request):
     return HttpResponse(f'hello')
 
+def ajax_test(request):
+    return HttpResponse('<h1>AJAX</h1>', content_type='text/html')
+
 def goods_list(request):
     all_goods = GoodItem.objects.all()
     context = {
